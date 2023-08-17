@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <h1>New Business</h1>
+    <form id="contact-form" action="#" method="post">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" maxlength="10" required />
+      </div>
+
+      <div class="form-group">
+        <label for="contact-name">Contact Name:</label>
+        <input type="text" id="contact-name" name="contact-name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="contact-email">Contact Email:</label>
+        <input type="email" id="contact-email" name="contact-email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="contact-phone">Contact Phone:</label>
+        <input type="tel" id="contact-phone" name="contact-phone" maxlength="10" required />
+      </div>
+
+      <div class="form-group">
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" />
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes" rows="4"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Business Type:</label>
+        <label><input type="radio" name="business" value="Small Business" />Small Business</label>
+        <label><input type="radio" name="business" value="Entrepreneur" />Entrepreneur</label>
+        <label><input type="radio" name="business" value="Enterprise" />Enterprise</label>
+      </div>
+
+      <div class="form-group">
+        <label>Category:</label>
+        <label>
+          <input type="checkbox" name="category" value="Clothes"/>Clothes
+        </label>
+        <label>
+          <input type="checkbox" name="category" value="Toys"/>Toys
+        </label>
+        <label>
+          <input type="checkbox" name="category" value="Groceries"/>Groceries
+        </label>
+        <label>
+          <input type="checkbox" name="category" value="Electronics"/>Electronics
+        </label>
+        <label>
+          <input type="checkbox" name="category" value="Digital"/>Digital
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label for="commission">Commission Percentage:</label>
+        <input type="number" id="commission" name="commission" max="100" required/>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Active From:</label>
+        <input type="date" id="date" name="date" />
+      </div>
+
+      <div class="form-group">
+        <label for="logo">Logo:</label>
+        <input type="file" accept="image/*" id="logo" name="logo" required/>
+      </div>
+
+      <div class="form-group">
+        <label><input type="checkbox" name="agree" required /> 
+          To represent whether the account is critical so that we can provide extra care in case of any queries.
+        </label>
+      </div>
+
+      <!-- <div class="form-group">
+        <label>Payment Options:</label>
+        <label><input type="radio" name="payment" value="Cash on Delivery" />Cash on Delivery</label>
+        <label><input type="radio" name="payment" value="Card Payment" />Card Payment</label>
+        <label><input type="radio" name="payment" value="UPI" />UPI</label>
+      </div> -->
+
+      <div class="form-group">
+        <label>Payment Options:</label>
+        <label>
+          <input type="checkbox" name="payment" value="Cash on Delivery"/>Cash on Delivery
+        </label>
+        <label>
+          <input type="checkbox" name="payment" value="Card Payment"/>Card Payment
+        </label>
+        <label>
+          <input type="checkbox" name="payment" value="UPI"/>UPI
+        </label>
+      </div>
+
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
